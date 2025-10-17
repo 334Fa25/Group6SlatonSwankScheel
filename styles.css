@@ -1,18 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Header Section */
+header {
+    background-color: #5e785e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 3rem;
 }
 
-a {
+/* Logo Section */
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: #ffffff;
     text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
 }
 
-ul {
-    list-style: none;
+nav a:hover {
+    opacity: 0.8;
 }
 
-.header{
-    width: 100%;
-    
+/* Contact Button */
+.contact-btn {
+    background-color: #ffffff;
+    color: #5e785e;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e7ece7;
 }
