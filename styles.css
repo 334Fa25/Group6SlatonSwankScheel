@@ -48,3 +48,83 @@ nav a:hover {
 .contact-btn:hover {
     background-color: #e7ece7;
 }
+
+/* Footer Section */
+footer {
+    background-color: #5e785e;
+    color: #ffffff;
+    font-family: "Georgia", serif;
+    padding: 2rem 3rem;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Logo */
+.footer-logo img {
+    height: 45px;
+    width: auto;
+}
+
+/* Footer Socials */
+.footer-socials a img {
+    height: 25px;
+    width: auto;
+    margin-right: 0.75rem;
+    transition: opacity 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    opacity: 0.7;
+}
+
+/* Footer Contact */
+.footer-contact p {
+    margin: 0.25rem 0;
+    text-align: right
+}
+
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer Nav - List Style */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right
+}
+
+.footer-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: underline;
+}
