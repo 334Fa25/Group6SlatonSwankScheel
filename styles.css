@@ -49,6 +49,20 @@ nav a:hover {
     background-color: #e7ece7;
 }
 
+/*Main Section*/
+main {
+    background-color: #D4C9A8;
+    text-decoration-color: #F2E8D4;
+}
+
+h1 {
+    font-size: larger;
+}
+
+paragraph {
+    font-size: small;
+}
+
 /* Footer Section */
 footer {
     background-color: #5e785e;
