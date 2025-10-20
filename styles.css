@@ -49,18 +49,67 @@ nav a:hover {
     background-color: #e7ece7;
 }
 
-/*Main Section*/
+/* Main Section */
 main {
-    background-color: #D4C9A8;
-    text-decoration-color: #F2E8D4;
+    font-family: "Georgia", serif;
+    color: #000000;
+    background-color: #f3ebd9;
 }
 
-h1 {
-    font-size: larger;
+/* Hero Section */
+.hero {
+    position: relative;
 }
 
-paragraph {
-    font-size: small;
+.hero-image {
+    width: 100%;
+    height: 250px;
+    display: block;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 15%;
+    left: 3.5%;
+    transform: none;
+    color: #000000;
+    text-align: left;
+    width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 11rem;
+    padding-bottom: 11rem;
+}
+
+.card {
+    background-color: #dfd6bb;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Footer Section */
@@ -141,4 +190,15 @@ footer {
 .footer-bottom a {
     color: #ffffff;
     text-decoration: underline;
+}
+
+.footer-disclaimer {
+    background-color: #5e785e;
+    color: #ffffff;
+    font-family: "Georgia", serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
