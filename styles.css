@@ -54,6 +54,7 @@ main {
     font-family: "Georgia", serif;
     color: #000000;
     background-color: #f3ebd9;
+    gap:11rem;
 }
 
 /* Hero Section */
@@ -101,8 +102,8 @@ main {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 11rem;
-    padding-bottom: 11rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card {
@@ -110,6 +111,17 @@ main {
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
+}
+
+.cardInfo{
+    text-align-last: left;
+    padding-bottom: 20px;
+}
+
+img{
+    float: right;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 
 /* Footer Section */
