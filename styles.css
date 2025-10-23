@@ -101,8 +101,8 @@ main {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 11rem;
-    padding-bottom: 11rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card {
