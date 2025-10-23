@@ -93,8 +93,14 @@ main {
 
 /* Content Section */
 .content {
-    text-align: center;
+    text-align: left;
     padding: 4rem 2rem;
+}
+
+.contentTwo {
+    text-align: left;
+    padding: 4rem 2rem;
+    width: 40%;
 }
 
 /* Cards Section */
@@ -107,9 +113,19 @@ main {
 
 .card {
     background-color: #dfd6bb;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 1rem;
+    margin-bottom: 80px;
+    margin-top:80px;
+    padding-left: 1rem;
+    width: 100%
+}
+
+.images {
+    float: right;
+    width: 50%;
+    padding-bottom: 11rem;
 }
 
 /* Footer Section */
