@@ -1,3 +1,5 @@
+/* GLOBAL STYLES (Shared Across All Pages) */
+
 /* Header Section */
 header {
     background-color: #5e785e;
@@ -91,6 +93,8 @@ main {
     line-height: 1.6;
 }
 
+/* BLOG AND TIPS PAGE STYLES*/
+
 /* Content Section */
 .content {
     text-align: center;
@@ -101,8 +105,8 @@ main {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 11rem;
-    padding-bottom: 11rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card {
@@ -256,4 +260,104 @@ footer {
     line-height: 1.4;
     color: #000;
     margin-top: 0.8rem;
+}
+
+/* GALLERY PAGE STYLES */
+.beige-section {
+    background-color: #f3ebd9;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* Use existing cards as section headers */
+.cards {
+    background-color: #f3ebd9;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #dfd6bb;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.card h2 {
+    margin: 0;
+    font-family: "Georgia", serif;
+    font-size: 1.2rem;
+}
+
+/* Rows for before/after images */
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-row img {
+    width: 370px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Other Completed Projects */
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.gallery-column.tall img {
+    width: 420px;
+}
+
+.gallery-column.small img {
+    width: 260px;
+}
+
+.gallery-column img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Services Button */
+.gallery-button {
+    text-align: center;
+    background-color: #f3ebd9;
+    padding: 3rem 0 4rem 0;
+}
+
+.services-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: "Georgia", serif;
+    padding: 0.9rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.services-btn:hover {
+    background-color: #333;
 }
