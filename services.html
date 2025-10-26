@@ -15,11 +15,11 @@
         </div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Blog/Tips</a>
-            <a href="#">Gallery</a>
-            <a href="#">Services</a>
-            <a href="#" class="contact-btn">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="blogandtips.html">Blog/Tips</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="contact-btn">Contact Us</a>
         </nav>
     </header>
 
@@ -27,26 +27,146 @@
         <section class="hero">
             <img src="house3After.png" alt="Beautiful Landscape" class="hero-image" />
             <div class="hero-text">
-                <h1>Name of Page</h1>
-                <p>Subtitle Text Subtitle Text Subtitle Text Subtitle Text Subtitle Text Subtitle Text</p>
+                <h1>Our Services</h1>
+                <p>Take a look at all we have to offer!</p>
             </div>
-        </section>
-
-        <section class="content">
-            <p>Body Text for Page</p>
         </section>
 
         <section class="cards">
             <div class="card">
-                <h2>Title</h2>
-            </div>
-            <div class="card">
-                <h2>Title</h2>
-            </div>
-            <div class="card">
-                <h2>Title</h2>
+                <h2>Schedule us for...</h2>
             </div>
         </section>
+        <div class="container">
+            <div class="box1">
+                <h4>Packages:</h4>
+                <p>1. Sprout Plan</p>
+                <p>2. Growth Plan</p>
+                <p>3. Bloom Plan</p>
+                
+                <h4>Lawn Installation and Maintenance Services:</h4>
+                <p>1. Sod Installation</p>
+                <p>2. Native Grass Seeding</p>
+                <p>3. Monthly Maintenance</p>
+                
+                <h4>Eco Irrigation Systems</h4>
+                <p>1. Basic Drip System</p>
+                <p>2. Smart Yard System</p>
+                <p>3. Rain Harvest Intergration</p>
+                
+                <h4>Seasonal Clean up and Care</h4>
+                <p>1. Spring Prep</p>
+                <p>2. Fall Ready</p>
+                <p>3. Storm Recovery</p>
+                
+                <h4>Specialty Add-Ons</h4>
+                <p>1. Patio planters and decorative pots</p>
+                <p>2. Pollinator Garden Installation</p>
+                <p>3. Low voltage garden lighting</p>
+            </div>
+
+            <div class="box2">
+                <h4> Package Details:</h4>
+                <p>1. On-site consultation, basic layout plan (front or back yard), plant selection guide (native & low-water species).</p>
+                <p>2. Full-yard design (front & back), custom planting plan, soil and irrigation recommendations, 3D concept images.</p>
+                <p>3. Full-yard design, sourcing & coordinating plant delivery, design adjustments post-installation, one follow-up maintenance visit. </p>
+                
+                <h4>Lawn Service Details:</h4>
+                <p>1. Preparation, soil amendment, sod laying, first watering, starter care instructions. </p>
+                <p>2. Eco-conscious seeding blend, soil prep, slow-release fertilizer. </p>
+                <p>3. Mowing, edging, organic fertilization, weed control. </p>
+                
+                <h4>Irrigation Service Details:</h4>
+                <p>1. Drip irrigation for gardens, programmable timer.</p>
+                <p>2. Drip & micro-sprinklers, app-controlled water schedule, rain sensor. </p>
+                <p>3. Smart system plus rainwater catchment barrels and filtration. </p>
+                
+                <h4>Seasonal Service Details:</h4>
+                <p>1. Leaf & debris removal, bed prep, pruning, first fertilization. </p>
+                <p>2. Leaf & debris removal, perennial cutbacks, winter fertilizer. </p>
+                <p>3. Branch & debris clearing, lawn recovery treatments. </p>
+                
+                <h4>Specialty Service Details</h4>
+                <p>1. Selection, planting, placement.</p>
+                <p>2. Bee & butterfly-friendly plants, signage.</p>
+                <p>3. Path & accent lights, timer or solar powered.</p>
+            </div>
+            <div class="box3">
+                <h4>Package Pricing</h4>
+                <p>$250</p>
+                <p>$750</p>
+                <p>$1,200</p>
+                <h4>Lawn Pricing</h4>
+                <p>$2.50–$4.50 per sq. ft.</p>
+                <p>$1,000–$1,500 per yard (typical residential lot) </p>
+                <p>$150–$250/month </p>
+                <h4>Irrigation Pricing</h4>
+                <p>$850</p>
+                <p>$1,500 </p>
+                <p>$2,200 </p>
+                <h4>Seasonal Care Pricing</h4>
+                <p>$200–$450 </p>
+                <p>$200–$450 </p>
+                <p>Starting at $150 </p>
+                <h4>Specialty Pricing</h4>
+                <p>$50–$200 each </p>
+                <p>$300–$700 </p>
+                <p>$400–$1,000 </p>
+                
+                <h4>*Price vaires based on client's yard. Schedule quote to see price* </h4>
+
+            </div>
+        </div>
+
+    
+  <section class="Form">
+            <section class="cards">
+                <div class="card">
+                    <h2>Schedule Service or FREE Quote Today!</h2>
+                </div>
+            </section>
+            <form action="index.php" method="post">
+                <label for="emailAddress">Email Address</label>
+                <input type="text" id="emailAddress" placeholder="bsprout.landscaping@gmail.com" required><br>
+
+                <label for="phoneNumber"> Phone Number:</label>
+                <input type="tel" id="phoneNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+                <label for="jobDate">Day of Service</label>
+                <input type="date" id=jobDate><br>
+
+                <label for="freeQuote">Are you scheduling a free quote?</label>
+                <input type="checkbox" required>
+
+                <fieldset>
+                    <legend>Packages</legend>
+                    <label for="packageSelect">Sign up for package</label>
+                    <select>
+                        <option>Sprout Plan</option>
+                        <option>Growth Plan</option>
+                        <option>Bloom Plan</option>
+                    </select><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Services</legend>
+                    <label for="serviceSelect">Select a service</label>
+                    <select>
+                        <option>Lawn Installation and Maintenance</option>
+                        <option>Eco Irrigation Systems</option>
+                        <option>Seasonal Clean Up and Care</option>
+                        <option>Specialty Add-ons</option>
+                    </select><br>
+                    <label for="serviceSpecific">Please detail what job you'd like from the service you selected</label>
+                    <input type="text" placeholder="Sod Installation" required>
+                </fieldset>
+
+                <input type="reset">
+                <input type="submit">
+
+            </form>
+        </section>
+
     </main>
 
     <footer>
@@ -69,11 +189,11 @@
 
             <div class="footer-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog/Tips</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blogandtips.html">Blog/Tips</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
