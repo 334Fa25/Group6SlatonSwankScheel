@@ -116,6 +116,40 @@ main {
     font-size: 1rem;
 }
 
+/*Box section*/
+
+.container {
+    display: flex;
+  
+}
+
+.box1 {
+    flex: 1;
+    width: 150px;
+    height:fit-content;
+    background-color: #8E9F85;
+}
+
+.box2 {
+    flex: 4;
+    width: 150px;
+    height: fit-content;
+    background-color: #f3ebd9;
+}
+
+.box3{
+     flex: 1;
+    width: 150px;
+    height:fit-content;
+    background-color: #8E9F85
+}
+
+/*Form Section*/
+.form {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 /* Footer Section */
 footer {
     background-color: #5e785e;
