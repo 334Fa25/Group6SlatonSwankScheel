@@ -1,0 +1,157 @@
+/* Hero Section Button */
+.hero-text a.button-class {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+.hero-text a.button-class:hover {
+    background-color: #4d664d;
+}
+
+/* Content Section Button */
+.content a.button-class {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.content a.button-class:hover {
+    background-color: #4d664d;
+}
+
+/* Gallery Section */
+.gallery-row img {
+  width: 30%;
+  border-radius: 8px;
+  margin: 0 1%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.gallery-button-class {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-button-class:hover {
+    background-color: #4d664d;
+}
+
+/* Why Choose Section */
+.checklist ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center
+}
+
+.checklist li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.checklist li::before {
+    content: "✓";
+    color: #5e785e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Mission Section */
+.mission-section p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Customer Reviews */
+.review-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.review {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 15%;
+    min-width: 175px;
+}
+
+.review {
+    background-color: #5e785e;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.review-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.review-button:hover {
+    background-color: #4d664d;
+}
+
+/* Contact Section */
+.contact-section a {
+    color: #5e785e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section .button-class {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .button-class:hover {
+    background-color: #4d664d;
+}
