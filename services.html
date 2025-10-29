@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="BrightSproutLogo.png" alt="BrightSproutLogo" />
+            <img src="clientimages/brightsproutlogo.png" alt="Logo for BrightSprout Landscaping">
         </div>
 
         <nav>
@@ -25,7 +25,7 @@
 
     <main>
         <section class="hero">
-            <img src="house3After.png" alt="Beautiful Landscape" class="hero-image" />
+            <img src="clientimages/house3after.png" alt="Beautiful Landscape" class="hero-image" />
             <div class="hero-text">
                 <h1>Our Services</h1>
                 <p>Take a look at all we have to offer!</p>
@@ -38,6 +38,8 @@
             </div>
         </section>
 
+        <!--These 3 boxes make the table for services, details and prices.
+            Might change if it doesn't work responsively -->
         <div class="container">
             <div class="box1">
                 <h4>Packages:</h4>
@@ -123,13 +125,14 @@
             </div>
         </div>
 
-        <section class="form">
-            <section class="cards">
+          <section class="cards">
                 <div class="card">
                     <h2>Schedule Service or FREE Quote Today!</h2>
                 </div>
             </section>
-
+        <!--This is the form for scheduling services or a free quote -->
+        <section class="form">
+          
             <form action="index.php" method="post">
                 <label for="emailAddress">Email Address</label>
                 <input type="text" id="emailAddress" name="emailAddress" placeholder="bsprout.landscaping@gmail.com" required><br>
@@ -139,7 +142,9 @@
 
                 <label for="jobDate">Day of Service</label>
                 <input type="date" id="jobDate" name="jobDate"><br>
-
+                
+                <!--The freeQuote is required and placed before the rest of the questions
+                    so people can select the service they want a quote for -->
                 <label for="freeQuote">Are you scheduling a free quote?</label>
                 <input type="checkbox" id="freeQuote" name="freeQuote" required><br>
 

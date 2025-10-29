@@ -26,7 +26,7 @@
     <main>
 
         <section class="hero">
-            <img src="house3After.png" alt="Beautiful Landscape" class="hero-image" />
+            <img src="clientimages/house3after.png" alt="Beautiful Landscape" class="hero-image">
             <div class="hero-text">
                 <h1>Contact Us</h1>
                 <p>Learn our values and how to contact us.</p>
@@ -48,7 +48,7 @@
 
         <section class="contentTwo">
             <section class="images">
-                <img src="jamiesmall.jpg" alt="jamie">
+                <img src="clientimages/jamiesmall.jpg" alt="Our owner and designer, Jamie Rivers">
             </section>
             <p>
                 Jamie’s expertise in horticulture and sustainable design guides every project.
@@ -66,7 +66,7 @@
 
         <section class="contentTwo">
             <section class="images">
-                <img src="carlos.jpg" alt="carlos">
+                <img src="clientimages/carlos.jpg" alt="Our irrigation specialist, Carlos Lopez">
             </section>
             <p>
                 Carlos is the wizard behind our water-efficient systems. His innovative irrigation solutions
@@ -83,7 +83,7 @@
 
         <section class="contentTwo">
             <section class="images">
-                <img src="mina.png" alt="mina">
+                <img src="clientimages/mina.png" alt="Our maintenance lead, Mina Patel">
             </section>
             <p>
                 Mina keeps every garden at its peak through all seasons. Her knowledge of plants, soils,
@@ -91,15 +91,17 @@
             </p>
         </section>
 
-        <section class="Form">
+           <section class="Form">
             <section class="cards">
                 <div class="card">
                     <h2>Contact Us</h2>
                 </div>
             </section>
+        <!--Form to get in contact with us-->
+        <section class="form">
             <form action="index.php" method="post">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" placeholder="Jamie" required><br>
+                <input type="text" id="firstName" placeholder="Jamie" required>
 
                 <label for="lastName">Last Name</label>
                 <input type="text" id="lastName" placeholder="Rivers" required><br>
@@ -109,7 +111,11 @@
 
                 <label for="message">Message:</label>
                 <input type="text" id="message" required>
+                
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
             </form>
+            </section>
         </section>
 
     </main>
