@@ -121,7 +121,7 @@ main {
 .form {
     margin-left: auto;
     margin-right: auto;
-    width:50%;
+    width: 50%;
 }
 
 /* Footer Section */
@@ -544,7 +544,7 @@ footer {
 
 /* Gallery Section */
 .gallery-row img {
-    width: 30%;
+    width: 24%;
     border-radius: 8px;
     margin: 0 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -553,12 +553,12 @@ footer {
 .gallery-button-class {
     background-color: #000000;
     color: #ffffff;
-    padding: 0.7rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 1.5rem;
     display: inline-block;
+    margin-top: 1rem;
     transition: background-color 0.3s ease;
 }
 
@@ -566,26 +566,31 @@ footer {
     background-color: #4d664d;
 }
 
+/* Center the button container */
+.gallery-row + div {
+    text-align: center;
+}
+
 /* Why Choose Section */
 .checklist {
     list-style: none;
     padding-left: 0;
-    text-align: center
+    text-align: center;
 }
 
 .checklist li {
     margin-bottom: 1rem;
-    position: relative;
-    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .checklist li::before {
     content: "✓";
     color: #5e785e;
     font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: static;
 }
 
 /* Mission Section */
@@ -597,50 +602,39 @@ footer {
 }
 
 /* Customer Reviews */
+.reviews-section + p {
+    text-align: center;
+}
+
 .review-grid {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
-}
-
-.review {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    width: 15%;
-    min-width: 175px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
 }
 
 .review {
     background-color: #5e785e;
     color: #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1rem;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    width: 16%;
+    min-width: 180px;
+    text-align: left;
+    line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.review-button {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
+/* Author styling */
+.review .author {
+    display: block;
+    margin-top: 0.5rem;
     font-weight: bold;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.review-button:hover {
-    background-color: #4d664d;
+    color: #f0f0f0;
+    font-size: 0.9rem;
 }
 
 /* Contact Section */
@@ -665,3 +659,102 @@ footer {
 .contact-section .button-class:hover {
     background-color: #4d664d;
 }
+
+/* Mobile (<= 767px) */
+@media (max-width: 767px) {
+
+    /* Gallery */
+    .gallery-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .75rem;
+        margin-top: .5rem;
+        padding: 0 1rem;
+    }
+
+    .gallery-row img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .gallery-row + div {
+        text-align: center;
+    }
+
+    /* Checklist */
+    .checklist {
+        padding: 0 1rem;
+    }
+
+    .checklist li {
+        text-align: center;
+    }
+
+    /* Mission text (remove fixed 50% width on phones) */
+    .mission-section p {
+        width: auto;
+        max-width: 90%;
+        margin: 0.5rem auto 0;
+        padding: 0 1rem;
+    }
+
+    /* Reviews (2-up and then 1-up on small) */
+    .review {
+        width: 46%;
+        min-width: 0;
+    }
+
+    @media (max-width: 480px) {
+
+        /* Very small phones: reviews 1-up */
+        .review {
+            width: 88%;
+        }
+    }
+
+    /* Tablet (768px-1024px) ONLY */
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Gallery */
+        .gallery-row {
+            display: grid;
+            grid-template-columns: repeat (3, 1fr);
+            gap: .75rem;
+            margin-top: .5rem;
+            padding: 0;
+        }
+
+        .gallery-row img {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    /* Checklist 2 columns */
+    .checklist {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        gap: .75rem 1rem;
+        max-width: 900px;
+        margin: 1rem auto 0;
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .checklist li {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Mission text */
+    .mission-section p {
+        width: auto;
+        max-width: 720px;
+        margin: 0.5rem auto 0;
+    }
+
+    /* Reviews */
+    .review {
+        width: 28%;
+        min-width: 0;
+    }
