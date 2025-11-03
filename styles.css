@@ -121,7 +121,7 @@ main {
 .form {
     margin-left: auto;
     margin-right: auto;
-    width:50%;
+    width: 50%;
 }
 
 /* Footer Section */
@@ -370,35 +370,149 @@ footer {
     background-color: #333;
 }
 
+/*CONTACT PAGE STYLES*/
+
+@media (max-width: 600px){
+    .contentTwo {
+    padding: 40px 80px;
+}
+
+.contact-section a {
+    color: #5e785e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section .button-class {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .button-class:hover {
+    background-color: #4d664d;
+}
+
+    @media (max-width: 1024px){
+        .contentTwo {
+    padding: 40px 80px;
+}
+
+.contact-section a {
+    color: #5e785e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section .button-class {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .button-class:hover {
+    background-color: #4d664d;
+}
+
+    }
+}
+.contentTwo {
+    padding: 40px 80px;
+}
+
+.contact-section a {
+    color: #5e785e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section .button-class {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .button-class:hover {
+    background-color: #4d664d;
+}
+
 /* SERVICES PAGE STYLES */
 
-/* Box section */
-.container {
-    display: flex;
+table {
+    width: 100%;
 }
 
-.box1 {
-    flex: 1;
-    width: 150px;
-    height: 68rem;
-    background-color: #8E9F85;
+.greenTable {
+    width: 8rem;
 }
 
-.box2 {
-    flex: 4;
-    width: 150px;
-    height: fit-content;
-    background-color: #f3ebd9;
+/* Form */
+
+@media (max-width: 600px) {
+    form {
+        background-color: #f2ebd9;
+        width: 100%;
+        padding: 40px 80px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    fieldset {
+        margin: 30px 0;
+        padding: 20px;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        form {
+            background-color: #f2ebd9;
+            width: 100%;
+            padding: 40px 80px;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
 }
 
-.box3 {
-    flex: 1;
-    width: 150px;
-    height: 68rem;
-    background-color: #8E9F85
-}
-
-/* Form Section */
 form {
     background-color: #f2ebd9;
     width: 100%;
@@ -424,52 +538,17 @@ footer {
     margin-top: 0;
 }
 
-/* LAYOUT FOR SERVICE BOXES */
-.container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 40px 60px;
-    background-color: #f2ebd9;
-    box-sizing: border-box;
+.body {
+    display: block;
 }
 
-.box1,
-.box2,
-.box3 {
-    flex: 1;
-    padding: 30px;
-    box-sizing: border-box;
-}
+/*Services Table take 2*/
 
-.box1 {
-    background-color: #5e785e;
-    color: #fff;
-}
 
-.box2 {
-    background-color: #f2ebd9;
-    color: #000;
-}
 
-.box3 {
-    background-color: #5e785e;
-    color: #fff;
-}
+/*Services Responsive Design*/
 
-.box1 h4,
-.box2 h4,
-.box3 h4 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
 
-.box1 p,
-.box2 p,
-.box3 p {
-    margin: 6px 0;
-    line-height: 1.5;
-}
 
 .cards {
     display: flex;
@@ -496,14 +575,13 @@ footer {
     margin-right: auto;
 }
 
-.contentTwo {
-    padding: 40px 80px;
-}
 
 .images img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
+
+
 
 /* HOME PAGE STYLES */
 
@@ -643,25 +721,3 @@ footer {
     background-color: #4d664d;
 }
 
-/* Contact Section */
-.contact-section a {
-    color: #5e785e;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-section .button-class {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section .button-class:hover {
-    background-color: #4d664d;
-}
