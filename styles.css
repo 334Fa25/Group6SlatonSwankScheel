@@ -14,7 +14,6 @@ header {
     height: 45px;
     width: auto;
     display: block;
-
 }
 
 /* Navigation */
@@ -155,7 +154,7 @@ footer {
 /* Footer Contact */
 .footer-contact p {
     margin: 0.25rem 0;
-    text-align: right
+    text-align: right;
 }
 
 .footer-contact a {
@@ -168,7 +167,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: right
+    text-align: right;
 }
 
 .footer-nav li {
@@ -388,7 +387,7 @@ footer {
     flex: 1;
     width: 150px;
     height: 68rem;
-    background-color: #8E9F85
+    background-color: #8E9F85;
 }
 
 /* Form Section */
@@ -500,40 +499,40 @@ footer {
 
 /* SERVICES PAGE TABLE + FORM CLEANUP */
 
-    main {
-        text-align: center;
-    }
+main {
+    text-align: center;
+}
 
-    table {
-        width: 90%;
-        max-width: 1000px;
-        margin: 2rem auto;
-        border-collapse: collapse;
-        font-family: "Georgia", serif;
-        background-color: #f3ebd9;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    font-family: "Georgia", serif;
+    background-color: #f3ebd9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    th,
-    td {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        text-align: center;
-        vertical-align: top;
-    }
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: top;
+}
 
-    th {
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
+th {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
 
-    td p {
-        margin: 0.5rem 0;
-    }
+td p {
+    margin: 0.5rem 0;
+}
 
-    .greenTable {
-        color: #000000;
-    }
+.greenTable {
+    color: #000000;
+}
 
 .header-bg {
     background-color: #dfd6bb;
@@ -543,99 +542,100 @@ footer {
     background-color: #5e785e;
 }
 
-    .cards {
-        text-align: center;
-        margin: 2rem 0;
-    }
+.cards {
+    text-align: center;
+    margin: 2rem 0;
+}
 
-    .card h2 {
-        font-size: 1.3rem;
-        margin: 0;
-    }
+.card h2 {
+    font-size: 1.3rem;
+    margin: 0;
+}
 
-    /* FORM SECTION */
-    .form {
-        background-color: #dfd6bb;
-        padding: 2rem;
-        border-radius: 8px;
-        max-width: 700px;
-        margin: 3rem auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
+/* FORM SECTION */
+.form {
+    background-color: #dfd6bb;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 3rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
 body {
-  background-color: #f3ebd7; 
+    background-color: #f3ebd7;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: "Georgia", serif;
+}
+
+fieldset {
+    border: 1px solid #5e785e;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #5e785e;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    background-color: #5e785e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Georgia", serif;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #4a624a;
+}
+
+/* TABLE + FORM RESPONSIVE */
+@media (max-width: 768px) {
+
+    table,
+    th,
+    td {
+        font-size: 0.9rem;
+    }
+
     form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        text-align: left;
-    }
-
-    form label {
-        font-weight: bold;
-        margin-bottom: 0.25rem;
-    }
-
-    form input,
-    form select,
-    form textarea {
-        width: 100%;
-        padding: 0.6rem;
-        border: 1px solid #aaa;
-        border-radius: 5px;
-        font-family: "Georgia", serif;
-    }
-
-    fieldset {
-        border: 1px solid #5e785e;
-        border-radius: 6px;
         padding: 1rem;
-    }
-
-    legend {
-        font-weight: bold;
-        color: #5e785e;
     }
 
     input[type="submit"],
     input[type="reset"] {
-        width: 48%;
-        background-color: #5e785e;
-        color: white;
-        border: none;
-        padding: 0.8rem;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 1rem;
-        font-family: "Georgia", serif;
-        transition: background-color 0.3s ease;
+        width: 100%;
     }
-
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
-        background-color: #4a624a;
-    }
-
-    /* TABLE + FORM RESPONSIVE */
-    @media (max-width: 768px) {
-
-        table,
-        th,
-        td {
-            font-size: 0.9rem;
-        }
-
-        form {
-            padding: 1rem;
-        }
-
-        input[type="submit"],
-        input[type="reset"] {
-            width: 100%;
-        }
-    }
+}
 
 /* MOBILE DESIGN */
 @media (max-width: 767px) {
@@ -765,8 +765,16 @@ body {
     }
 }
 
-/* TABLET DESIGN */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Very small phones: reviews 1-up */
+@media (max-width: 480px) {
+
+    .review {
+        width: 88%;
+    }
+}
+
+/* Tablet (768px-1024px) ONLY */
+@media (min-width: 768px) and (max-width: 1024px) {
 
     /* HEADER */
     header {
@@ -822,8 +830,19 @@ body {
     }
 
     /* GALLERY PAGE */
+    .gallery-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+
     .gallery-row img {
-        width: 320px;
+        width: 100%;
+        margin: 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
 
     .gallery-grid {
@@ -1146,58 +1165,60 @@ body {
         width: 46%;
         min-width: 0;
     }
+}
 
-    @media (max-width: 480px) {
+/* Very small phones nested portion moved out as its own media query */
+@media (max-width: 480px) {
 
-        /* Very small phones: reviews 1-up */
-        .review {
-            width: 88%;
-        }
-    }
-
-    /* Tablet (768px-1024px) ONLY */
-    @media (min-width: 768px) and (max-width: 1024px) {
-
-        /* Gallery */
-        .gallery-row {
-            display: grid;
-            grid-template-columns: repeat (3, 1fr);
-            gap: .75rem;
-            margin-top: .5rem;
-            padding: 0;
-        }
-
-        .gallery-row img {
-            width: 100%;
-            margin: 0;
-        }
-    }
-
-    /* Checklist 2 columns */
-    .checklist {
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        gap: .75rem 1rem;
-        max-width: 900px;
-        margin: 1rem auto 0;
-        padding: 0 1rem;
-        text-align: left;
-    }
-
-    .checklist li {
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    /* Mission text */
-    .mission-section p {
-        width: auto;
-        max-width: 720px;
-        margin: 0.5rem auto 0;
-    }
-
-    /* Reviews */
+    /* Very small phones: reviews 1-up */
     .review {
-        width: 28%;
-        min-width: 0;
+        width: 88%;
     }
+}
+
+/* Tablet (768px-1024px) portion moved out as its own media query */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Gallery */
+    .gallery-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .75rem;
+        margin-top: .5rem;
+        padding: 0;
+    }
+
+    .gallery-row img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Checklist 2 columns (kept as standalone, corrected repeat syntax) */
+.checklist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem 1rem;
+    max-width: 900px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.checklist li {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+/* Mission text */
+.mission-section p {
+    width: auto;
+    max-width: 720px;
+    margin: 0.5rem auto 0;
+}
+
+/* Reviews */
+.review {
+    width: 28%;
+    min-width: 0;
+}
