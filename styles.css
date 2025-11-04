@@ -532,6 +532,7 @@ td p {
 
 .greenTable {
     color: #000000;
+    width: 6rem;
 }
 
 .header-bg {
@@ -540,6 +541,7 @@ td p {
 
 .cell-bg {
     background-color: #5e785e;
+    width: 2rem;
 }
 
 .cards {
