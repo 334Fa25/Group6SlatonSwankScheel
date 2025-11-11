@@ -411,12 +411,14 @@ td {
 }
 
 th {
-    background-color: #dfd6bb;
+    background-color: #5e785e;
     font-weight: bold;
+    color: white
+
 }
 
 td {
-    background-color: #5e785e;
+    background-color: #f3ebd9;
     color: #000;
 }
 
@@ -510,14 +512,14 @@ form select {
 }
 
 fieldset {
-    border: 1px solid #5e785e;
+    border: 1px solid black;
     border-radius: 6px;
-    padding: 1rem
+    padding: 2rem
 }
 
 legend {
     font-weight: 700;
-    color: #5e785e
+    color: black
 }
 
 input[type=reset],
