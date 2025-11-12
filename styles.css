@@ -418,7 +418,6 @@ th {
     background-color: #5e785e;
     font-weight: bold;
     color: white
-
 }
 
 td {
@@ -545,35 +544,53 @@ input[type=submit]:hover {
     background-color: #4a624a
 }
 
+.logo img {
+    height: 45px;
+    width: auto;
+    /*display: none;*/
+}
+
+.mobile-container {
+    display: none;
+}
+
+/*Media Queries */
+
 /* ============================ 
 MOBILE STYLE RULES 
 ============================ */
 
 @media only screen and (max-width: 480px) {
+
+    /*======================
+     * Hamburger Menu
+    ========================
+    */
+
     #desktop-nav-container {
         display: none;
     }
 
     .mobile-container {
-
-        display: inline;
-        max-width: 480px;
-        margin: auto;
-        height: 500px;
-        color: white;
-        border-radius: 10px;
+        display: block;
     }
 
-    .topnav {
-        overflow: hidden;
-        position: relative;
+    .logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        /*display: block;*/
+        height: 45px;
+        width: auto;
+
     }
 
     .topnav #myLinks {
         display: none;
     }
 
-    .topnav a {
+    .topnav .topnav a {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
@@ -582,10 +599,24 @@ MOBILE STYLE RULES
     }
 
     .topnav a.icon {
+        background: green;
         display: block;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
     }
 
     .topnav a:hover {
