@@ -502,6 +502,8 @@ MOBILE STYLE RULES
 
     .topnav #myLinks {
         display: none;
+        min-width: 120px;
+
     }
 
     #myLinks {
@@ -543,6 +545,7 @@ MOBILE STYLE RULES
     .fa-bars {
         color: white;
         font-size: 30px;
+        min-width: 210px;
     }
 
     .topnav a:hover {
