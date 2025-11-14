@@ -982,14 +982,18 @@ input[type=submit]:hover {
     display: block;
     margin-top: .5rem;
     font-weight: 700;
-    color: #f0f0f0;
+    color: #fff;
     font-size: .9rem
 }
 
 .contact-section a {
-    color: #5e785e;
+    color: #000;
     text-decoration: none;
     font-weight: 700
+}
+
+.contact-section a:hover {
+    color: #4d664d
 }
 
 .contact-section .button-class {
