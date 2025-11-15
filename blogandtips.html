@@ -3,10 +3,11 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="socialicons/favicon.ico">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Landscaping, Lawn Maintenance, and Irrigation company. 
-    BrightSprout Landscaping offers many affordable packages to create beautiful lawns that are envirnmentally conscious">
+    BrightSprout Landscaping offers many affordable packages to create beautiful lawns that are environmentally conscious">
     <title>BrightSprout Landscaping</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,10 +15,34 @@
 <body>
     <header>
         <div class="logo">
-            <img src="clientimages/brightsproutlogo.png" alt="brightsproutlogo" />
+            <img src="clientimages/brightsproutlogo.png" alt="BrightSproutLogo" />
         </div>
 
-        <nav>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <div class="mobile-logo">
+                    <a href="#home" class="active"><img src="clientimages/brightsproutlogo.png" alt="BrightSproutLogo" /></a>
+                </div>
+                <nav>
+
+                    <div id="myLinks">
+                        <a href="index.html">Home</a>
+                        <a href="blogandtips.html">Blog/Tips</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html" class="contact-btn">Contact Us</a>
+                    </div>
+                </nav>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <nav id="desktop-nav-container">
             <a href="index.html">Home</a>
             <a href="blogandtips.html">Blog/Tips</a>
             <a href="gallery.html">Gallery</a>
@@ -35,7 +60,6 @@
             </div>
         </section>
 
-
         <section class="cards">
             <div class="card">
                 <h2>Sustainable Landscaping & Water Conservation</h2>
@@ -43,19 +67,19 @@
             <div class="photo-row">
                 <div class="photo-card">
                     <img src="blogtipsimages/sustainablelandscapingwaterconservation01.png" alt="sustainablelandscapingwaterconservation01">
-                    <button class="view-btn">Click to View</button>
+                    <a href="https://mdc.mo.gov/community-conservation/landscaping-nature?utm_source.com" class="view-btn">Click to View</a>
                     <p class="photo-caption"><strong>Missouri Department of Conservation</strong><br>Landscaping for Nature</p>
                 </div>
 
                 <div class="photo-card">
                     <img src="blogtipsimages/sustainablelandscapingwaterconservation02.png" alt="sustainablelandscapingwaterconservation02">
-                    <button class="view-btn">Click to View</button>
+                    <a href="https://www.plantsunlimiteddurham.com/" class="view-btn">Click to View</a>
                     <p class="photo-caption"><strong>Plants Unlimited Durham</strong><br>Sustainable Modern Landscape Design: Green Solutions for a Greener Tomorrow</p>
                 </div>
 
                 <div class="photo-card">
                     <img src="blogtipsimages/sustainablelandscapingwaterconservation03.png" alt="sustainablelandscapingwaterconservation03">
-                    <button class="view-btn">Click to View</button>
+                    <a href="https://yavapailandscaping.com/" class="view-btn">Click to View</a>
                     <p class="photo-caption"><strong>Yavapai Landscaping</strong><br>The Crucial Role of Landscape Design in Water Conservation</p>
                 </div>
             </div>
@@ -65,20 +89,20 @@
             <div class="photo-row">
                 <div class="photo-card">
                     <img src="blogtipsimages/missourispecificgardeningtips01.png" alt="missourispecificgardeningtips01">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Missouri Department of Conservation</strong><br>Landscaping for Nature</p>
+                    <a href="https://plantagreenhouses.com/blogs/planting-zones/missouri?srsltid=AfmBOopPKRA8gilM_rVc0gdBFW1DYptcX0cCCjMeXZlghl1yMBVQu8pb" class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>Planta Greenhouses</strong><br>Missouri Planting Zones</p>
                 </div>
 
                 <div class="photo-card">
                     <img src="blogtipsimages/missourispecificgardeningtips02.png" alt="missourispecificgardeningtips02">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Plants Unlimited Durham</strong><br>Sustainable Modern Landscape Design: Green Solutions for a Greener Tomorrow</p>
+                    <a href="https://www.gardeningcharlotte.com/" class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>Gardening Charlotte</strong><br>Let’s Get Growing</p>
                 </div>
 
                 <div class="photo-card">
-                    <img src="blogtipsimages/seasonalmaintenanceguides03.png" alt="missourispecificgardeningtips03">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Yavapai Landscaping</strong><br>The Crucial Role of Landscape Design in Water Conservation</p>
+                    <img src="blogtipsimages/missourispecificgardeningtips03.png" alt="missourispecificgardeningtips03">
+                    <a href="https://extension.missouri.edu/programs/northwest-missouri-horticulture/horticultural-tips" class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>University of Missouri Extension</strong><br>Northwest Missouri Horticultural Tips</p>
                 </div>
             </div>
 
@@ -88,20 +112,20 @@
             <div class="photo-row">
                 <div class="photo-card">
                     <img src="blogtipsimages/seasonalmaintenanceguides01.png" alt="seasonalmaintenanceguides01">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Missouri Department of Conservation</strong><br>Landscaping for Nature</p>
+                    <a href="https://ecogardener.com/blogs/news/preparing-your-garden-for-each-season#:~:text=Spring:%20Start%20by%20removing%20debris,layout%20for%20the%20upcoming%20spring." class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>Eco Gardener</strong><br>Preparing Your Garden for Each Season</p>
                 </div>
 
                 <div class="photo-card">
                     <img src="blogtipsimages/seasonalmaintenanceguides02.png" alt="seasonalmaintenanceguides02">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Plants Unlimited Durham</strong><br>Sustainable Modern Landscape Design: Green Solutions for a Greener Tomorrow</p>
+                    <a href="https://www.bhg.com/gardening/yard/garden-care/seasonal-landscape-maintenance/" class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>Better Homes & Gardens</strong><br>The Ultimate Guide to Seasonal Landscape Maintenance</p>
                 </div>
 
                 <div class="photo-card">
                     <img src="blogtipsimages/seasonalmaintenanceguides03.png" alt="seasonalmaintenanceguides03">
-                    <button class="view-btn">Click to View</button>
-                    <p class="photo-caption"><strong>Yavapai Landscaping</strong><br>The Crucial Role of Landscape Design in Water Conservation</p>
+                    <a href="https://www.lostcoastplanttherapy.com/" class="view-btn">Click to View</a>
+                    <p class="photo-caption"><strong>Lost Coast Plant Therapy</strong><br>Natural Plant Insecticide & Fungicide</p>
                 </div>
             </div>
         </section>
@@ -143,7 +167,16 @@
             <p>Disclaimer: This site was created as part of the Web Development II course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>
         </div>
     </footer>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
