@@ -494,16 +494,12 @@ MOBILE STYLE RULES
     }
 
     .mobile-logo {
-        /*display: block;*/
-        height: 45px;
-        width: auto;
-
+       display: none;
     }
 
     .topnav #myLinks {
         display: none;
         min-width: 120px;
-
     }
 
     #myLinks {
@@ -736,7 +732,7 @@ TABLET STYLE RULES
 DESKTOP STYLE RULES 
 ============================ */
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:481px) {
     header {
         flex-direction: row;
         align-items: center;
