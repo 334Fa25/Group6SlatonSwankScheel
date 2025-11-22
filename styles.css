@@ -494,7 +494,7 @@ MOBILE STYLE RULES
     }
 
     .mobile-logo {
-       display: none;
+        display: none;
     }
 
     .topnav #myLinks {
@@ -520,6 +520,10 @@ MOBILE STYLE RULES
         padding: 10px 0;
         border-bottom: none;
         /* remove lines */
+    }
+
+    .topnav {
+        height: 10px;
     }
 
     .topnav .topnav a {
