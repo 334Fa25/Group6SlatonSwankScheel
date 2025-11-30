@@ -16,17 +16,19 @@
         <div class="logo">
             <img src="clientimages/brightsproutlogo.png" alt="BrightSproutLogo" />
         </div>
-
-        <!-- Simulate a smartphone / tablet -->
         <div class="mobile-container">
-
-            <!-- Top Navigation Menu -->
             <div class="topnav">
-                <div class="mobile-logo">
-                    <a href="#home" class="active"><img src="clientimages/brightsproutlogo.png" alt="BrightSproutLogo" /></a>
+                <!-- NEW FLEXBOX CONTAINER -->
+                <div class="nav-flex-container">
+                    <div class="mobile-logo">
+                        <a href="#home" class="active"><img src="clientimages/brightsproutlogo.png" alt="BrightSproutLogo" /></a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="open menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
+                <!-- END NEW FLEXBOX CONTAINER -->
                 <nav>
-
                     <div id="myLinks">
                         <a href="index.html">Home</a>
                         <a href="blogandtips.html">Blog/Tips</a>
@@ -35,10 +37,6 @@
                         <a href="contact.html" class="contact-btn">Contact Us</a>
                     </div>
                 </nav>
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
             </div>
         </div>
         <nav id="desktop-nav-container">

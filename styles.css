@@ -489,6 +489,28 @@ MOBILE STYLE RULES
         display: block;
     }
 
+    .mobile-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .topnav .mobile-logo {
+        margin: 0;
+    }
+
+    .topnav .icon {
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    .nav-flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .logo {
         display: none;
     }
@@ -511,50 +533,69 @@ MOBILE STYLE RULES
         padding: 10px;
         text-align: center;
         /* center the links */
-    }
-
-    #myLinks a {
-        display: block;
-        text-align: center;
-        /* center text */
-        padding: 10px 0;
-        border-bottom: none;
-        /* remove lines */
-    }
-
-    .topnav {
-        height: 10px;
-    }
-
-    .topnav .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-
-    .topnav a.icon {
-        background: #5e785e;
-        display: block;
         position: absolute;
+        top: 60px;
         right: 10px;
-        top: 10px;
+        width: 200px;
+        z-index: 9999;
     }
+}
 
-    .fa-bars {
-        color: white;
-        font-size: 30px;
-        min-width: 210px;
-    }
+#myLinks a {
+    display: block;
+    text-align: center;
+    /* center text */
+    padding: 10px 0;
+    border-bottom: none;
+    /* remove lines */
+}
 
-    .topnav a:hover {
-        color: black;
-    }
+.topnav {
+    height: 10px;
+}
 
-    .active {
-        color: white;
-    }
+.topnav .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #5e785e;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.topnav {}
+
+.topnav .icon i {
+    font-size: 26px;
+}
+
+#myLinks {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 200px;
+    z-index: 9999;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+    min-width: 210px;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.active {
+    color: white;
 }
 
 .review {
