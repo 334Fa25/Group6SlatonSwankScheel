@@ -99,7 +99,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 1rem;
     background-color: #f3ebd9;
     text-align: center;
     margin: 2rem 0;
@@ -259,7 +258,6 @@ footer {
 
 .beige-section {
     background-color: #f3ebd9;
-    padding: 3rem 0;
     text-align: center;
 }
 
@@ -551,7 +549,7 @@ MOBILE STYLE RULES
 }
 
 .topnav {
-    height: 10px;
+    height: 10.5px;
 }
 
 .topnav .topnav a {
@@ -569,8 +567,6 @@ MOBILE STYLE RULES
     right: 10px;
     top: 10px;
 }
-
-.topnav {}
 
 .topnav .icon i {
     font-size: 26px;
@@ -891,7 +887,7 @@ DESKTOP STYLE RULES
 }
 
 .gallery-row img {
-    width: 24%;
+    width: 260px;
     border-radius: 8px;
     margin: 0 1%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2)
