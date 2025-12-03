@@ -62,7 +62,7 @@ main {
 
 .hero-image {
     width: 100%;
-    height: 250px;
+    height: 350px;
     display: block;
     opacity: .8;
 }
@@ -85,14 +85,14 @@ main {
 }
 
 .hero-text p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.6;
 }
 
 .content {
-    text-align: center;
-    padding: 2rem 2rem;
+    padding: 40px 80px;
+    line-height: 1.6;
 }
 
 .cards {
@@ -129,7 +129,6 @@ footer {
 }
 
 .footer-top {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
@@ -152,9 +151,10 @@ footer {
     opacity: .7;
 }
 
-.footer-contact p {
-    margin: .25rem 0;
-    text-align: right;
+.footer-contact {
+    float: left;
+    text-align: left;
+    width: auto;
 }
 
 .footer-contact a {
@@ -170,6 +170,7 @@ footer {
 }
 
 .footer-nav li {
+    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -187,6 +188,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, .3);
     padding-top: 1rem;
     font-size: .9rem;
+    line-height: 1.6;
 }
 
 .footer-bottom a {
@@ -200,6 +202,7 @@ footer {
     font-family: Georgia, serif;
     font-size: .8rem;
     text-align: center;
+    line-height: 1.6;
     padding: 1rem 2rem;
     margin-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -216,6 +219,7 @@ footer {
 }
 
 .photo-card {
+    padding-top: 2rem;
     position: relative;
     text-align: center;
     max-width: 350px;
@@ -251,7 +255,7 @@ footer {
 .photo-caption {
     font-family: Georgia, serif;
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.6;
     color: #000;
     margin-top: .8rem;
 }
@@ -378,6 +382,12 @@ input[type=submit]:hover {
     background-color: #4a624a;
 }
 
+
+input[type="checkbox"] {
+    float: left;
+    margin-left: 0;
+}
+
 .header-section {
     width: 100%;
     text-align: center;
@@ -391,6 +401,7 @@ input[type=submit]:hover {
 
 .contentTwo {
     padding: 40px 80px;
+    line-height: 1.6;
 }
 
 .images img {
@@ -408,6 +419,7 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
     text-align: center;
+    line-height: 1.6;
 }
 
 th,
@@ -509,8 +521,9 @@ MOBILE STYLE RULES
         align-items: center;
     }
 
-    .logo {
+    .logo img {
         display: none;
+        height: 40px;
     }
 
     .mobile-logo {
@@ -525,16 +538,14 @@ MOBILE STYLE RULES
     #myLinks {
         display: none;
         flex-direction: column;
-        /* vertical list */
         gap: 10px;
         background-color: #5e785e;
         padding: 10px;
         text-align: center;
-        /* center the links */
         position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 200px;
+        top: 41px;
+        right: 8px;
+        width: 100px;
         z-index: 9999;
     }
 }
@@ -542,10 +553,8 @@ MOBILE STYLE RULES
 #myLinks a {
     display: block;
     text-align: center;
-    /* center text */
     padding: 10px 0;
     border-bottom: none;
-    /* remove lines */
 }
 
 .topnav {
@@ -572,18 +581,10 @@ MOBILE STYLE RULES
     font-size: 26px;
 }
 
-#myLinks {
-    position: absolute;
-    top: 55px;
-    right: 0;
-    width: 200px;
-    z-index: 9999;
-}
-
 .fa-bars {
     color: white;
     font-size: 30px;
-    min-width: 210px;
+    margin-right: 0.5rem;
 }
 
 .topnav a:hover {
@@ -595,7 +596,7 @@ MOBILE STYLE RULES
 }
 
 .review {
-    width: 88%
+    width: 88%;
 }
 
 /* ============================ 
@@ -621,21 +622,18 @@ TABLET STYLE RULES
 
     header {
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        align-items: flex-start;
-        padding: 1rem 2rem;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-        width: 100%;
-        margin-top: 1rem;
+        padding: 1rem 1rem;
     }
 
     nav a {
         font-size: 1rem;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 1.2rem;
     }
 
     .logo img {
@@ -645,52 +643,6 @@ TABLET STYLE RULES
     .contact-btn {
         padding: .5rem 1rem;
         font-size: 1rem;
-    }
-
-    .hero-image {
-        height: 220px;
-        object-fit: cover;
-    }
-
-    .hero-text {
-        position: relative;
-        text-align: center;
-        width: 90%;
-        left: 5%;
-        top: 10%;
-        transform: none;
-        padding: 1rem;
-    }
-
-    .hero-text h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-        max-width: 85%;
-    }
-
-    .photo-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: center;
-        padding: 2.5rem 1rem;
-    }
-
-    .photo-card {
-        flex: 1 1 45%;
-        max-width: 45%;
-    }
-
-    .view-btn {
-        font-size: 1rem;
-        padding: .7rem 1.2rem;
-    }
-
-    .photo-caption {
-        font-size: .95rem;
     }
 
     .gallery-grid {
@@ -749,9 +701,15 @@ TABLET STYLE RULES
         gap: 2rem;
     }
 
-    .footer-contact p,
-    .footer-nav ul {
-        text-align: center;
+    .footer-contact {
+        float: left;
+        text-align: left;
+        width: auto;
+    }
+
+    .footer-contact a {
+        color: #fff;
+        text-decoration: underline;
     }
 
     .footer-socials a img {
@@ -778,96 +736,79 @@ DESKTOP STYLE RULES
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 3rem
+        padding: 1rem 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
     }
 
     nav {
         flex-direction: row;
-        gap: 2.5rem
+        gap: 1.2rem;
     }
 
-    .hero-image {
-        height: 300px
-    }
-
-    .hero-text {
-        top: 20%;
-        left: 8%;
-        width: 70%
-    }
-
-    .hero-text h1 {
-        font-size: 3rem
-    }
-
-    .hero-text p {
-        font-size: 1.1rem;
-        line-height: 1.7
-    }
-
-    .photo-row {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 2rem;
-        padding: 3rem 0
-    }
-
-    .photo-card {
-        max-width: 350px
+    .logo img {
+        height: 40px;
     }
 
     .gallery-row img {
-        width: 370px
+        width: 370px;
     }
 
     .gallery-column.tall img {
-        width: 420px
+        width: 420px;
     }
 
     .gallery-column.small img {
-        width: 260px
+        width: 260px;
     }
 
     .gallery-button {
-        padding: 3rem 0 4rem 0
+        padding: 3rem 0 4rem 0;
     }
 
     .footer-top {
         flex-direction: row;
         justify-content: space-between;
-        text-align: left
+        text-align: left;
     }
 
-    .footer-contact p {
-        text-align: right
+    .footer-contact {
+        float: left;
+        text-align: left;
+        width: auto;
+    }
+
+    .footer-contact a {
+        color: #fff;
+        text-decoration: underline;
     }
 
     .footer-nav ul {
-        text-align: right
+        text-align: right;
     }
 
     .footer-bottom {
         text-align: center;
-        font-size: .9rem
+        font-size: .9rem;
     }
 }
 
 .hero-text a.button-class {
-    display: inline-block;
     background-color: #000;
     color: #fff;
     padding: .8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.05rem;
+    display: inline-block;
     margin-top: 1rem;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 .hero-text a.button-class:hover {
-    background-color: #4d664d
+    background-color: #4d664d;
 }
 
 .content a.button-class {
@@ -879,18 +820,18 @@ DESKTOP STYLE RULES
     font-weight: 700;
     display: inline-block;
     margin-top: 1rem;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 .content a.button-class:hover {
-    background-color: #4d664d
+    background-color: #4d664d;
 }
 
 .gallery-row img {
     width: 260px;
     border-radius: 8px;
     margin: 0 1%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
 
 .gallery-button-class {
@@ -902,21 +843,24 @@ DESKTOP STYLE RULES
     font-weight: 700;
     display: inline-block;
     margin-top: 1rem;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 .gallery-button-class:hover {
-    background-color: #4d664d
+    background-color: #4d664d;
 }
 
 .gallery-row + div {
-    text-align: center
+    text-align: center;
 }
 
 .checklist {
     list-style: none;
+    padding-top: 0.75rem;
     padding-left: 0;
-    text-align: center
+    text-align: center;
+    line-height: 1.6;
+
 }
 
 .checklist li {
@@ -924,14 +868,14 @@ DESKTOP STYLE RULES
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem
+    gap: .5rem;
 }
 
 .checklist li::before {
     content: "✓";
     color: #5e785e;
     font-weight: 700;
-    position: static
+    position: static;
 }
 
 .mission-section p {
@@ -939,11 +883,12 @@ DESKTOP STYLE RULES
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center
+    text-align: center;
+    padding-top: 0.75rem;
 }
 
 .reviews-section + p {
-    text-align: center
+    text-align: center;
 }
 
 .review-grid {
@@ -952,7 +897,7 @@ DESKTOP STYLE RULES
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 1.5rem;
-    padding: 0 1rem
+    padding: 0 1rem;
 }
 
 .review {
@@ -965,7 +910,7 @@ DESKTOP STYLE RULES
     min-width: 180px;
     text-align: left;
     line-height: 1.5;
-    transition: transform .3s ease, box-shadow .3s ease
+    transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .review .author {
@@ -973,17 +918,17 @@ DESKTOP STYLE RULES
     margin-top: .5rem;
     font-weight: 700;
     color: #fff;
-    font-size: .9rem
+    font-size: .9rem;
 }
 
 .contact-section a {
     color: #000;
     text-decoration: none;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .contact-section a:hover {
-    color: #4d664d
+    color: #4d664d;
 }
 
 .contact-section .button-class {
@@ -995,9 +940,9 @@ DESKTOP STYLE RULES
     text-decoration: none;
     font-weight: 700;
     margin-top: 1.5rem;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 .contact-section .button-class:hover {
-    background-color: #4d664d
+    background-color: #4d664d;
 }
