@@ -75,6 +75,7 @@ main {
     color: #000;
     text-align: left;
     width: 80%;
+    line-height: 1.6;
 }
 
 .hero-text h1 {
@@ -95,6 +96,10 @@ main {
     line-height: 1.6;
 }
 
+.local-section {
+    padding-top: 30px;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -102,6 +107,7 @@ main {
     background-color: #f3ebd9;
     text-align: center;
     margin: 2rem 0;
+    line-height: 1.6;
 }
 
 .card {
@@ -388,7 +394,7 @@ input[type=submit]:hover {
 }
 
 form {
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
     display: inline-block;
 }
@@ -405,8 +411,20 @@ form {
 }
 
 .contentTwo {
-    padding: 40px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+    padding-left: 25rem;
+    padding-right: 25rem;
+    max-width: 900px;
+    margin: auto;
     line-height: 1.6;
+}
+
+h3 {
+    margin-top: 0;
 }
 
 .images img {
@@ -439,7 +457,8 @@ th {
     background-color: #5e785e;
     font-weight: bold;
     color: white;
-    font-size: 1rem;
+    font-size: .75rem;
+
 }
 
 td {
@@ -511,6 +530,18 @@ MOBILE STYLE RULES
         align-items: center;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .contentTwo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 20px 40px;
+        line-height: 1.6;
     }
 
     .topnav .mobile-logo {
@@ -604,6 +635,28 @@ MOBILE STYLE RULES
 
 .review {
     width: 88%;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 1rem;
+    margin: 40px 0;
+}
+
+.gallery-section .gallery-grid {
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.gallery-section .gallery-row img {
+    width: 92%;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
 /* ============================ 
@@ -731,14 +784,23 @@ TABLET STYLE RULES
     .footer-disclaimer {
         font-size: .75rem;
     }
+}
 
+.photo-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3rem 0;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 /* ============================ 
 DESKTOP STYLE RULES 
 ============================ */
 
-@media only screen and (min-width:481px) {
+@media only screen and (min-width:1025px) {
     header {
         flex-direction: row;
         align-items: center;
